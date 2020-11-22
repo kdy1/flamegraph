@@ -260,7 +260,7 @@ fn workload(opt: &Opt) -> Vec<String> {
 
     if opt.example.is_some() {
         binary_path.push("examples");
-    } else if opt.bench.is_some() {
+    } else if opt.bench.is_some() || opt.test.is_some() {
         binary_path.push("deps");
     }
 
